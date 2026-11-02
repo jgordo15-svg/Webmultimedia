@@ -1,7 +1,12 @@
 let POSSIBLE_WORDS = ["goku", "dog", "android", "dissmount"];
-
+let guesses = "";
+let word= "";
+let Max_guesses=6;
+let guessCount= Max_GUESSES
 
 function newGame() {
+    guesses="";
+    guessCount = Max_GUESSES;
     let randomIndex = parseInt(Math.random() * POSSIBLE_WORDS.length);
     let word = POSSIBLE_WORDS[randomIndex];
     updateScreen();
@@ -13,7 +18,9 @@ function guess(){
 
    let input = document.getElementById("guess");
    let letter = input.value;
-   let guesses = "";
+   if(word.indexOf(letter)<0){
+    guessCount--;
+   }
    guesses+=letter;
    updateScreen();
 
@@ -37,6 +44,9 @@ function updateScreen(){
     clue.textContent = clueString
     let guessArea = document.getElementById("guesses");
     guessArea.textContent = "Guessed Letters: "+guesses;
+
+    let image = document.getElementById("hangmanpic");
+    image.src = "images/hangman"+(guessCount).gif;
 
 
 }
