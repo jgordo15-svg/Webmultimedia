@@ -1,4 +1,4 @@
-let squareArea = document.quarySelecton(#square);
+let squareArea = document.quarySelecton(#squarearea);
 let squareCpunt = parseInt(Math.random()+21+30);
 
 for (let i = 0; i < squareCount; i++){
