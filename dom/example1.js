@@ -1,7 +1,7 @@
-window.onload = function(){
-    let myButton = document.getElementById("myButton");
-myButton.onclick = myAlert
-}
+//window.onload = function(){
+   // let myButton = document.getElementById("myButton");
+//myButton.onclick = myAlert
+//}
 
 
 
