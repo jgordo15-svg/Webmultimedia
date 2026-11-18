@@ -18,7 +18,7 @@ for(let i = 0; i < squareCount)
 function getRandomCOlor(){
     let possibleLetters = "0123456789ABCDEF";
     let color="#";
-    for(let i = 0; i<6, i++){
+    for(let i = 0; i < 6, i++){
 
         let position = parseInt(Math.random())
     }
