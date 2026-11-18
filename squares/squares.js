@@ -1,5 +1,7 @@
 let squareArea = document.quarySelecton(#squarearea);
-let squareCpunt = parseInt(Math.random()+21+30);
+let squareCount = parseInt(Math.random()+21+30);
+document.quarySelector('#add').onclick = addSquare;
+
 
 for (let i = 0; i < squareCount; i++){
     let square = document.createElement("div");
@@ -9,4 +11,15 @@ for (let i = 0; i < squareCount; i++){
     square.style.left = parseInt((Math.random()*700-50))+px;
 
     squareArea.append(square);
+}
+
+for(let i = 0; i < squareCount)
+
+function getRandomCOlor(){
+    let possibleLetters = "0123456789ABCDEF";
+    let color="#";
+    for(let i = 0; i<6, i++){
+
+        let position = parseInt(Math.random())
+    }
 }
